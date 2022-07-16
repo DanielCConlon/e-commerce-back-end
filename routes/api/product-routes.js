@@ -29,7 +29,6 @@ router.get('/:id', (req, res) => {
         model: Tag,
         attributes: ['id', 'tag_name'],
         through: ProductTag,
-        as: 'TaggedProduct',
         foreignKey: 'product_id'
       },
 
